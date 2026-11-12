@@ -1,0 +1,35 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024-11-05
+  Info:
+    - Initial Release
+  Bugfixes:
+    - added thumbnail
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2024-11-26
+  Info:
+    - Added support for additional planet mods
+  Bugfixes:
+    - Crash because of poor implementation of naufulglebunusilo dependency
+---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Date: 2024-11-26
+  Info:
+    - Reworked the mod settings, now consists of an amount per planet instead of all planets the same
+	- upped allowed planet amount to 20
+  Bugfixes:
+    - Map Seed generation offset for new planet instances was too minor
+	- fixed problem with localisation
+---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Date: 2024-12-03
+  Info:
+    - new scuff introduced, shouldn't break anything (hopefully)
+  Bugfixes:
+    - implemented a fix for changes to planet generation by other mods leading to a crash
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2025-05-12
+  Info:
+    - reworked the mod to build upon PlanetsLib and Redrawn Space Connections
