@@ -20,3 +20,22 @@ for key, planet in pairs(data.raw["planet"]) do
         end 
     end
 end
+
+-- Normalize only evidenced route pairs after optional Redrawn generation.
+-- Reuse the same prototype object; all fields except its name remain untouched.
+for _,rule in ipairs(require("route-identity").pairs) do
+  local found
+  for name,connection in pairs(data.raw["space-connection"]) do
+    if (connection.from==rule.a and connection.to==rule.b)
+      or (connection.from==rule.b and connection.to==rule.a) then
+      assert(not found,"IRF stable route identity found multiple physical routes for "..rule.name)
+      found={name=name,prototype=connection}
+    end
+  end
+  if found and found.name~=rule.name then
+    assert(found.name==rule.b.."-"..rule.a,"IRF route has an unknown identity: "..found.name)
+    data.raw["space-connection"][found.name]=nil
+    found.prototype.name=rule.name
+    data.raw["space-connection"][rule.name]=found.prototype
+  end
+end

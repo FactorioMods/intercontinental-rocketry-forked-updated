@@ -2,6 +2,8 @@
 Version: 1.0.0
 Date: 2026-11-12
   Changes:
+    - Keep stable identities for existing interplanetary routes without adding duplicate connections.
+    - Preserve in-flight platform position and direction when route endpoints are reversed during upgrades.
     - Support Factorio 2.1 in a public derivative namespace and preserve original entity/settings identifiers.
     - Retain native ownership and complete original runtime storage during namespace migration.
 ---------------------------------------------------------------------------------------------------

@@ -1,3 +1,4 @@
+local route_identity = require("route-identity")
 local legacy_import = require("legacy_import")
 -- script.on_surface_created(function()
     
@@ -24,4 +25,8 @@ local legacy_import = require("legacy_import")
 --         end
     
 --   end)
-script.on_init(function() legacy_import.adopt("intercontinental-rocketry-forked") end)
+script.on_init(function()
+  legacy_import.adopt("intercontinental-rocketry-forked")
+  route_identity.init()
+end)
+script.on_configuration_changed(route_identity.migrate)

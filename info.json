@@ -7,7 +7,7 @@
   "description": "Factorio 2.1 compatibility fork of intercontinental-rocketry-forked. Fork of Intercontinental Rocketry \nEvery planet in Space Age, generates additional subplanets, allowing you to start fresh with any planet at any time. The settings allow you to control which planets get copied and how many copies you want.",
   "factorio_version": "2.1",
   "dependencies": [
-    "base",
+    "base >= 2.1.24",
     "space-age",
     "? Redrawn-Space-Connections",
     "PlanetsLib",
