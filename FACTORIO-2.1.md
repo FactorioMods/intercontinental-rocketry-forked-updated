@@ -1,0 +1,13 @@
+# Intercontinental Rocketry Forked: Updated
+
+Fork of intercontinental-rocketry-forked by Lessen_Freem. Original prototype, setting, remote interface and literal metatable names are retained. Asset paths and selected public dependency names use the new namespace. Native migrates_from transfers original ownership; runtime controls adopt the whole storage root before initialization/configuration can alter state. Hub bag and linked-hub surface registries retain their original tables and aliases. No historical Lua/JSON migration files are present.
+
+Source provenance: portal-archive-source-import. Authentic parent: b880497f6f08b4391d01135178053cec5dcb6351.  Archive imports are original Portal source snapshots, not invented upstream ancestry.
+
+License: MIT. Original author and license are retained.
+
+Validation receipts remain private in the work directory; connected-client rendering has not been assessed.
+
+Native headless validation: all 18 selected public derivatives load together and run 600 ticks on Factorio 2.1.24. The two stateful hubs additionally pass native whole-root ownership import and subsequent save/reload fixtures, retaining bag/request state, root cycles, shared aliases, partial-ammo/durability script inventories, rendering and entity identities. Functional original-ID receipts remain attached to their original artifacts.
+
+Keep Redrawn Space Connections optional to preserve original worlds without its network overhaul. Activate the existing Metal planetary branches/settings under either the original or public Metal namespace, without changing planet/setting identifiers.

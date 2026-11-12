@@ -15,7 +15,7 @@ end
 if mods["Cerys-Moon-of-Fulgora"] then --Other known modded planets should be appended in this section. This mod appears to be one of the first modded planets.
     table.insert(planets,"cerys")
 end
-if mods["metal-and-stars"] then --Other known modded planets should be appended in this section. This mod appears to be one of the first modded planets.
+if (mods["metal-and-stars"] or mods["metal-and-stars-updated"]) then --Other known modded planets should be appended in this section. This mod appears to be one of the first modded planets.
     table.insert(planets,"nix")
     table.insert(planets,"ringworld")
     table.insert(planets,"shipyard")

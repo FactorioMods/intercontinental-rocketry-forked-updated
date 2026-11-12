@@ -56,7 +56,7 @@ if mods["Cerys-Moon-of-Fulgora"] then --Other known modded planets should be app
     })
 end
 
-if mods["metal-and-stars"] then --Other known modded planets should be appended in this section. This mod appears to be one of the first modded planets.
+if (mods["metal-and-stars"] or mods["metal-and-stars-updated"]) then --Other known modded planets should be appended in this section. This mod appears to be one of the first modded planets.
     data:extend({
         int_settings_construct("nix"),
         int_settings_construct("ringworld"),

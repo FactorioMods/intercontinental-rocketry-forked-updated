@@ -1,3 +1,4 @@
+local legacy_import = require("legacy_import")
 -- script.on_surface_created(function()
     
 --         local is_subsurface = false
@@ -23,3 +24,4 @@
 --         end
     
 --   end)
+script.on_init(function() legacy_import.adopt("intercontinental-rocketry-forked") end)

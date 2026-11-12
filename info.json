@@ -1,22 +1,24 @@
 {
-  "name": "intercontinental-rocketry-forked",
-  "version": "2.0.0",
-  "title": "Intercontinental Rocketry Forked",
-  "author": "Lessen_Freem",
+  "name": "intercontinental-rocketry-forked-updated",
+  "version": "1.0.0",
+  "title": "Intercontinental Rocketry Forked: Updated",
+  "author": "Lessen_Freem; FactorioMods (Factorio 2.1 port)",
   "homepage": "",
-  "description": "Fork of Intercontinental Rocketry \nEvery planet in Space Age, generates additional subplanets, allowing you to start fresh with any planet at any time. The settings allow you to control which planets get copied and how many copies you want.",
-  "factorio_version": "2.0",
+  "description": "Factorio 2.1 compatibility fork of intercontinental-rocketry-forked. Fork of Intercontinental Rocketry \nEvery planet in Space Age, generates additional subplanets, allowing you to start fresh with any planet at any time. The settings allow you to control which planets get copied and how many copies you want.",
+  "factorio_version": "2.1",
   "dependencies": [
     "base",
     "space-age",
-    "Redrawn-Space-Connections",
+    "? Redrawn-Space-Connections",
     "PlanetsLib",
     "? naufulglebunusilo",
     "? tenebris",
     "? terrapalus",
     "? Factorio-Tiberium",
     "? Cerys-Moon-of-Fulgora",
-    "? metal-and-stars"
+    "? metal-and-stars",
+    "! intercontinental-rocketry-forked",
+    "? metal-and-stars-updated"
   ],
   "quality_required": false,
   "rail_bridges_required": false,
@@ -24,5 +26,8 @@
   "spoiling_required": false,
   "freezing_required": false,
   "segmented_units_required": false,
-  "expansion_shaders_required": false
+  "expansion_shaders_required": false,
+  "migrates_from": [
+    "intercontinental-rocketry-forked"
+  ]
 }
