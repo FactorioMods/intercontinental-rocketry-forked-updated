@@ -13,6 +13,9 @@ for key, planet in pairs(data.raw["planet"]) do
             new_planet.magnitude = planet.magnitude
             new_planet.hidden_in_factoriopedia = planet.hidden_in_factoriopedia
             new_planet.distance = planet.distance
+            -- Preserve the child orbit after PlanetsLib converts it to native coordinates.
+            new_planet.origin = table.deepcopy(planet.origin)
+            new_planet.orbit = table.deepcopy(planet.orbit)
             new_planet.map_seed_offset = planet.map_seed_offset
             new_planet.orientation = planet.orientation
             new_planet.label_orientation = planet.label_orientation
